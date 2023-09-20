@@ -114,6 +114,7 @@ class SectionController {
 						'title', 
 						'description', 
 						'color', 
+						'filename',
 						[Sequelize.fn(
 						'CONCAT', 
 						'http://localhost:3000/Assets/Images/Guide/Categories/', 
