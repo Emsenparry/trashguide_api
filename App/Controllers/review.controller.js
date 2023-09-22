@@ -24,7 +24,7 @@ class ReviewsController {
 		if(org_id) {
 			try {
 				const result = await Reviews.findAll({
-					attributes: ['id', 'subject', 'num_stars', 'created_at'],
+					attributes: ['id', 'subject', 'num_stars', 'created_at', 'comment'],
 					include: [{
 						model: Users,
 						attributes: ['id','firstname', 'lastname', 'email']
